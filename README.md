@@ -1,4 +1,4 @@
-# plink
+# plink, an audio game library
 Plink is an open source library for creating audio games. Plink simplifies several difficult aspects about making audio games, such as finding sound effects, dealing with audio streaming, supporting diverse input methods. Plink games run in the browser and can be played on desktop or mobile.
 
 Plink can be used to create a variety of audio-only or audio+video games, including action games, puzzle games, interactive fiction, rhythm games, music games, trivia games, and more.
