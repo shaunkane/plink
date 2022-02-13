@@ -3,10 +3,12 @@ Plink is an open source library for creating audio games. Plink simplifies sever
 
 Plink can be used to create a variety of audio-only games:
 
-- action games;
-- puzzle games;
-- rhythm games;
-- choose-your own adventure games;
+- action games
+- puzzle games
+- rhythm games
+- choose-your-own-adventure games
+- music games
+- trivia games
 - ... and whatever else you can come up with.
 
 ## Features
