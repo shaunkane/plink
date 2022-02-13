@@ -5,10 +5,10 @@ Plink can be used to create a variety of audio-only or audio+video games, includ
 
 - action games
 - puzzle games
+- interactive fiction
 - rhythm games
 - music games
 - trivia games
-- choose-your-own-adventure games
 
 ## Features
 Plink was designed based on years of prototyping and testing simople audio games. The goal of plink is to make it as easy to develop and distribute audio games as it is to develop simple graphical games. Plink includes the following features to support this goal:
