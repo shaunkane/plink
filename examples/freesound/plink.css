@@ -1,0 +1,92 @@
+body {
+    background-color: #333;
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+.top {
+    color: white;
+}
+
+#container {
+    width: 400;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container h1 {
+    margin-bottom: 10px;
+    font-variant: small-caps;
+}
+
+#plinkUIFrame {
+    margin-top: 40px;
+    width: 400;
+    height: 400;
+    border: 5px solid black;
+    position: relative;
+}
+
+#drawCanvas, #plinkUI {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#gestureCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+#plinkUI {
+    z-index: 2;
+}
+
+#drawCanvas {
+    background-color: black;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 400px) {
+    body {
+        margin: 0px;
+        touch-action: none;
+    }
+    .top {
+        margin: 10px;
+        color: white;
+    }
+    #container {
+        margin-top: 0px;
+        width: auto;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #plinkUIFrame {
+        width: auto;
+    }
+}
+
+.mainAudio {
+    color: white;
+}
+
+.soundEffect {
+    color: antiquewhite;
+}
+
+.backgroundSound {
+    color: lightpink;
+}
+
+.userInput {
+    color: powderblue;
+}

@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title>plink.js</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="stylesheet" href="plink.css">
+    <style>
+        #plinkUI {
+            /* make the text output transparent so we can show graphics beneath them */
+            opacity: 0.3;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="gestureCanvas"></canvas>
+    <div id="container">
+        <div class="top">
+            <h1>plink.js</h1>
+            <p>This is a self-voicing game. To play it, you should temporarily disable your screen reader.</p>
+        </div>
+        <div id="plinkUIFrame">
+            <div id="plinkUI">
+
+            </div>
+            <canvas id="drawCanvas" width="400" height="400"></canvas>
+        </div>
+    </div>
+
+    <script src="plink.js"></script>
+    <script src="gameLogic.js"></script>
+</body>
+
+</html>
