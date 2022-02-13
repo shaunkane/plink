@@ -68,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
             // play a beep (100hz, .5secs) to free the audio
             window.AudioManager.playTone(100, 500);
+            window.AudioManager.speak('OK');
             setTimeout(() => {
                 window.GameState.state = STATE_RECEIVED_INPUT;
 

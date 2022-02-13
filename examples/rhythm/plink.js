@@ -289,7 +289,13 @@ class AudioSequence {
     sleep(ms) {
         return new Promise((resolve) => setTimeout(resolve, ms));
     }
-} // input.js
+}/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
+
+// input.js
 // this file includes all the code for our
 // virtual controller. our controller supports
 // seven inputs: up, down, left, right, A, B, start
@@ -345,7 +351,14 @@ class InputManager {
         const gestureToController = { leftSwipe: "ArrowLeft", rightSwipe: "ArrowRight", upSwipe: "ArrowUp", downSwipe: "ArrowDown", oneFingerTap: "a", twoFingerTap: "b", threeFingerTap: "start" };
         this.propagateEvent(gestureToController[gestureName]);
     }
-} // touch.js
+}/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
+
+
+// touch.js
 // features for handling touch input
 // we need to support the gestures used by Plink
 // directional swipes, one and two and three finger tap
@@ -535,7 +548,13 @@ function numberWithin(firstNum, targetNum, error) {
 // explicitly overwrite the original if you want that
 function removeElement(element, array) {
     return array.filter(el => el != element);
-} // ui.js
+}/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
+
+// ui.js
 // manages the visual UI. currently this visualizes sounds
 // read out, but later it may support custom visual UIs
 
@@ -595,7 +614,13 @@ class UserInterface {
     initializeUI() {
         this.clearAll();
     }
-} // setup.js
+}/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
+
+// setup.js
 // this code instantiates objects and connects things
 // at page startup
 
@@ -659,6 +684,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
             // play a beep (100hz, .5secs) to free the audio
             window.AudioManager.playTone(100, 500);
+            window.AudioManager.speak('OK');
             setTimeout(() => {
                 window.GameState.state = STATE_RECEIVED_INPUT;
 
@@ -698,7 +724,13 @@ document.addEventListener('DOMContentLoaded', function(event) {
             gamePlay();
         }
     });
-}); // gameState.js
+});/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
+
+// gameState.js
 //
 // this is a global variable to keep track of the internal "state" of
 // our game -> loading, playing, paused, etc.
